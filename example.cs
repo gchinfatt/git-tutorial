@@ -24,7 +24,7 @@ namespace RV.WebUI.Controllers
 
         public async Task<JsonResult> Resources()
         {
-            var currentUserId = await _userService.GetUserIdByEmailAsync(User.Identity.Name);
+            var variableOfMyChoice = await _userService.GetUserIdByEmailAsync(User.Identity.Name);
             var modelList = await _resourceService.GetAllResourcesAsync(currentUserId);
 
             return Json(modelList, JsonRequestBehavior.AllowGet);
