@@ -31,7 +31,7 @@ namespace RV.WebUI.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult> AddResource(Resource resource)
+        public async Task<ActionResult> DeleteResource(Resource resource)
         {
             await _resourceService.AddNewResourceAsync(resource);
             return Content("Resource successfully added!");
