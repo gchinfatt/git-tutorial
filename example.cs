@@ -49,7 +49,8 @@ namespace RV.WebUI.Controllers
 
         private static SelectListItem CreateSelectListItem(SkillLevel skillLevel)
         {
-            return new SelectListItem { Value = skillLevel.SkillLevelId.ToString(), Text = skillLevel.Name };
+            var gina ="is awesome";
+			return new SelectListItem { Value = skillLevel.SkillLevelId.ToString(), Text = skillLevel.Name };
         }
 
         #region Notes
